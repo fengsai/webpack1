@@ -1,0 +1,36 @@
+{
+    "presets": [
+        ["@babel/preset-env",
+            {
+                // targets:{
+                //     chrome:'67'
+                // },
+                "useBuiltIns":"usage"
+        }],
+        [
+            "@babel/preset-react",
+            {
+             // "pragma": "dom", // default pragma is React.createElement
+             // "pragmaFrag": "DomFrag", // default is React.Fragment
+             // "throwIfNamespace": false // defaults to true
+            }
+        ]
+    ],
+    "plugins": [
+    //     [
+    //         "@babel/plugin-transform-runtime",
+    //         {
+    //             "corejs": 2,
+    //             "helpers": true,
+    //             "regenerator": true,
+    //             "useESModules": false
+    //         }
+    //     ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ]
+    ]
+}
